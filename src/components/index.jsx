@@ -5,7 +5,7 @@ import React from "react";
 function Home(props) {
 
     function handleDelete() {
-        props.deleteProp(props.id)
+        props.deleteProp(props.uniqueId)
     }
 
     return (

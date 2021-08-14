@@ -1,30 +1,40 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Home from "./components/index";
 import Add from "./components/add";
+import axios from "axios";
 
 function App() {
-  const [propItems,setPropItems]=useState([]);
+  const [propItems, setPropItems] = useState([]);
+  const [addItem, setAddItem] = useState({})
 
-  function addPropItem(propItems){
-    setPropItems(
-      prevItems=>{
-        return [...prevItems,propItems]
-      }
-    )
+  function addPropItem(addItem) {
+    setAddItem(addItem)
+    axios.post("http://localhost:5000/home/add", addItem)
+      .then(res => { console.log(res.data) })
+      .catch(err => { console.log(err) })
   }
 
-  function deleteProp(id){
-    setPropItems(prevItems=>{
-      return prevItems.filter((propVal,index)=>{return index!==id})
-    })
+  const showProperties = async () => {
+    const properties = await axios.get("http://localhost:5000/home/")
+    setPropItems(properties)
+  }
+
+  useEffect(() => {
+    showProperties();
+  }, [propItems]);
+
+  function deleteProp(uniqueId) {
+    axios.delete("http://localhost:5000/home/" + uniqueId)
+      .then(res => { console.log(res.data) })
+      .catch(err => { console.log(err) })
   }
 
   return (
     <div className="App">
-      <Add addPropItem={addPropItem} item={propItems} />
-      {propItems.map(
-        (propValue,index)=>{
-          return(<Home key={index} id={index} deleteProp={deleteProp} propName={propValue.fullName} desc={propValue.desc} size={propValue.size}  />)
+      <Add addPropItem={addPropItem} item={addItem} />
+      {propItems.data && propItems.data.map(
+        (propValue, index) => {
+          return (<Home key={index} uniqueId={propValue._id} deleteProp={deleteProp} propName={propValue.Name} desc={propValue.Description} size={propValue.Size} />)
         })}
     </div>
   );
