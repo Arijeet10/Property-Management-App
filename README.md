@@ -1,3 +1,25 @@
+App Demo
+
+Homepage:
+
+![Screenshot (160)](https://user-images.githubusercontent.com/87312638/129439396-cdb9ebac-6c19-4159-88aa-36a101d2df74.png)
+
+Adding New Property:
+
+![Screenshot (162)](https://user-images.githubusercontent.com/87312638/129439418-aec308bd-b8cc-4180-9864-56a6dbb40e0a.png)
+
+Property Gets Added
+
+![Screenshot (163)](https://user-images.githubusercontent.com/87312638/129439455-ea0a40fb-d41a-46b6-9fe4-5b6a4f0baa83.png)
+
+![Screenshot (161)](https://user-images.githubusercontent.com/87312638/129439428-6108b5be-d936-48f1-80fa-aa4b7f3a8728.png)
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +90,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
