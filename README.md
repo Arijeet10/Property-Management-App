@@ -18,9 +18,9 @@ Note: Node.js should be installed to run the app
   
     npm start
     
-  -return back to the project folder
+  -open a new terminal and go to the project folder
   
-    cd..
+    cd Property-Management-App
   
   -install the frontend dependencies
     
