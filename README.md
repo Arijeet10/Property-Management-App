@@ -20,7 +20,7 @@ Note: Node.js should be installed to run the app
     
   -open a new terminal and go to the project folder
   
-    cd Property-Management-App
+    cd Property-Management-App-master
   
   -install the frontend dependencies
     
