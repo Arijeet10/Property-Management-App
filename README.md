@@ -50,11 +50,17 @@ Property Gets Added
 
 Tools Used:
   -React JS
+  
   -MongoDB Atlas
+  
   -Node.js
+  
   -Express
+  
   -Mongoose
+  
   -Axios
+  
   -Material-ui components
 
 
