@@ -4,10 +4,10 @@ How to run the APP:
   
   -Unzip the file and open in a code editor
   
-  -install the necessary dependencies(note:node.js should be installed in the pc)
+  -install the required dependencies(note:node.js should be installed in the pc)
   
     npm install
-    
+  
   -after installing the dependencies run the app
   
     npm start
