@@ -1,11 +1,29 @@
 How to run the APP:
 
+Note: Node.js should be installed to run the app
+
   -Download the zip file
   
   -Unzip the file and open in a code editor
   
-  -install the required dependencies(note:node.js should be installed in the pc)
+  -go to the backend directory
   
+    cd backend
+  
+  -install the required dependencies
+  
+    npm install
+    
+  -after installing the required denpendencies run the server
+  
+    npm start
+    
+  -return back to the project folder
+  
+    cd..
+  
+  -install the frontend dependencies
+    
     npm install
   
   -after installing the dependencies run the app
