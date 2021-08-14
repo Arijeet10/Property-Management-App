@@ -10,10 +10,10 @@ Adding New Property:
 
 Property Gets Added
 
-![Screenshot (163)](https://user-images.githubusercontent.com/87312638/129439455-ea0a40fb-d41a-46b6-9fe4-5b6a4f0baa83.png)
-
 ![Screenshot (161)](https://user-images.githubusercontent.com/87312638/129439428-6108b5be-d936-48f1-80fa-aa4b7f3a8728.png)
 
+
+![Screenshot (163)](https://user-images.githubusercontent.com/87312638/129439455-ea0a40fb-d41a-46b6-9fe4-5b6a4f0baa83.png)
 
 
 
