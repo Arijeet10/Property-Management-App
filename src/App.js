@@ -1,9 +1,12 @@
 import React from "react";
+import Home from "./components";
+import Add from "./components/add";
 
 function App() {
   return (
     <div className="App">
-      Property Management System
+      <Add />
+      <Home />
     </div>
   );
 }
