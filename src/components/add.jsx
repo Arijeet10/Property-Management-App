@@ -1,3 +1,5 @@
+import { Button, FormControl, FormLabel, Input } from "@material-ui/core";
+import SaveIcon from '@material-ui/icons/Save';
 import React, { useState } from "react";
 
 function Add(props) {
@@ -24,12 +26,21 @@ function Add(props) {
 
     return (
         <div>
-            <form>
-                <input type="text" name="fullName" value={propData.fullName} placeholder="Enter full name" onChange={handleChange} />
-                <input type="text" name="desc" value={propData.desc} placeholder="Enter Description" onChange={handleChange} />
-                <input type="text" name="size" value={propData.size} placeholder="Enter size" onChange={handleChange} />
-                <button type="submit" onClick={handleClick}>Add Property</button>
-            </form>
+            <FormControl>
+                <FormLabel>Add Property</FormLabel>
+                <Input aria-describedby="my-helper-text" type="text" name="fullName" value={propData.fullName} placeholder="Enter property name" onChange={handleChange} />
+                <Input aria-describedby="my-helper-text" type="text" name="desc" value={propData.desc} placeholder="Give some Description" onChange={handleChange} />
+                <Input aria-describedby="my-helper-text" type="text" name="size" value={propData.size} placeholder="Enter property size" onChange={handleChange} />
+                <Button
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    startIcon={<SaveIcon />}
+                    onClick={handleClick}
+                >
+                    Add
+                </Button>
+            </FormControl>
         </div>
     )
 }
