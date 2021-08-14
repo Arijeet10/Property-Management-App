@@ -1,3 +1,11 @@
+How to run the APP:
+  -Download the zip file
+  -Unzip the file and open in a code editor
+  -install the necessary dependencies(note:node.js should be installed in the pc)
+    Code:npm install
+  -after installing the dependencies run the app
+    Code:npm start
+
 App Demo
 
 Homepage:
