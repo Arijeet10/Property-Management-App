@@ -48,7 +48,14 @@ Property Gets Added
 ![Screenshot (163)](https://user-images.githubusercontent.com/87312638/129439455-ea0a40fb-d41a-46b6-9fe4-5b6a4f0baa83.png)
 
 
-
+Tools Used:
+  -React JS
+  -MongoDB Atlas
+  -Node.js
+  -Express
+  -Mongoose
+  -Axios
+  -Material-ui components
 
 
 
