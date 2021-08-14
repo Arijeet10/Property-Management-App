@@ -6,11 +6,11 @@ How to run the APP:
   
   -install the necessary dependencies(note:node.js should be installed in the pc)
   
-    Code:npm install
+    npm install
     
   -after installing the dependencies run the app
   
-    Code:npm start
+    npm start
 
 App Demo
 
