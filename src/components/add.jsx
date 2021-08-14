@@ -22,15 +22,26 @@ function Add(props) {
     function handleClick(event) {
         event.preventDefault();
         props.addPropItem(propData)
+        setPropData({
+            fullName: "",
+            desc: "",
+            size: ""
+        })
     }
 
     return (
         <div>
             <FormControl>
                 <FormLabel>Add Property</FormLabel>
-                <Input aria-describedby="my-helper-text" type="text" name="fullName" value={propData.fullName} placeholder="Enter property name" onChange={handleChange} />
-                <Input aria-describedby="my-helper-text" type="text" name="desc" value={propData.desc} placeholder="Give some Description" onChange={handleChange} />
-                <Input aria-describedby="my-helper-text" type="text" name="size" value={propData.size} placeholder="Enter property size" onChange={handleChange} />
+                <FormControl>
+                    <Input aria-describedby="my-helper-text" type="text" name="fullName" value={propData.fullName} placeholder="Enter property name" onChange={handleChange} />
+                </FormControl>
+                <FormControl>
+                    <Input aria-describedby="my-helper-text" type="text" name="desc" value={propData.desc} placeholder="Give some Description" onChange={handleChange} />
+                </FormControl>
+                <FormControl>
+                    <Input aria-describedby="my-helper-text" type="text" name="size" value={propData.size} placeholder="Enter property size" onChange={handleChange} />
+                </FormControl>
                 <Button
                     variant="contained"
                     color="primary"
