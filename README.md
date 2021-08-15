@@ -14,7 +14,7 @@ Note: Node.js should be installed to run the app
   
     npm install
     
-  -after installing the required denpendencies run the server
+  -after installing the required dependencies run the server
   
     npm start
     
