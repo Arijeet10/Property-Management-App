@@ -63,6 +63,17 @@ Tools Used:
   -Axios
   
   -Material-ui components
+  
+ 
+App Functioning
+
+  -User can add property data and view them as a list
+  
+  -User can delete a particular data from the list
+  
+  -The data is stored and fetched dynamically from a cloud server
+  
+  -MongoDB Atlas is used to store the data
 
 
 
